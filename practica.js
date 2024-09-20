@@ -31,3 +31,4 @@ console.log(frase.substring(0,10))// (index inicial, index final), this shows us
 //tipo Entero y decimal
 const entero = 42
 const decimal= 32.3 // both types are of number variables / typeof allows us to know what type is a variabel
+//ola
