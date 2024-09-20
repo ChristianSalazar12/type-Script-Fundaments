@@ -30,5 +30,24 @@ console.log(frase.substring(0,10))// (index inicial, index final), this shows us
 //NUMBER
 //tipo Entero y decimal
 const entero = 42
-const decimal= 32.3 // both types are of number variables / typeof allows us to know what type is a variabel
-//ola
+const decimal= 32.3 // both types are of number variables / typeof allows us to know what type is a variabel(both = ambos)
+//Notacion cientifica // scientific notation
+const cientifico =5e3
+const infinito= Infinity
+const noEsnumero= NaN // 
+//-------------------------------------------------
+//arithmetic operations
+const sum = 4+1
+const subtraction = 2-2
+const product= 2*3
+const division= 2/3
+//module and exponentation
+const module = 15 %6
+const exponentation = 2 **3 
+//accuracy (accuracy is precision) 
+// in java script the accuary is relative, for example, 0.1 + 0.2 is 0.3000004, but toFixes(1) allow us to determine the number of decimals
+const suma3= 0.1 + 0.2 
+console.log(suma3.toFixed(1))
+//advanced operations
+const raizCuadrada = Math.sqrt(16) // math.sqrt allow us to get the square root (square root = raiz cuadrada)
+const absoluteValue = Math.abs(-7) // abs allow us to get the absoluto valor
