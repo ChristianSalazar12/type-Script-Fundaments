@@ -173,3 +173,61 @@ db.connect(); // OK
 ```
 
 In this example, the `connectionString` property and `logConnection` method are marked as `private`, so they cannot be accessed from outside the `DatabaseService` class. This helps keep sensitive information and implementation details safe from external access and modification.
+
+## Extending Classes with `extends`
+
+In TypeScript, you can create a new class that inherits properties and methods from another class using the `extends` keyword. This allows you to reuse and extend existing functionality.
+
+**Example:**
+
+```typescript
+class Animal {
+  public name: string;
+
+  constructor(name: string) {
+    this.name = name;
+  }
+
+  public iam():string{
+    return `hola soy ${this.name}.`
+  }
+}
+
+class Dog extends Animal {
+  protected raza: string;
+
+  constructor(name: string, raza: string) {
+    super(name); // Call the parent class constructor and are repeat in new class
+    this.raza = raza;
+  }
+
+  public saludar():string{
+    return`${super.iam()}, de raza ${this.raza}.`
+  }
+}
+````
+
+The `super` keyword in a class is used to call the constructor or methods of the parent (base) class.  
+When you use `super()` inside a subclass constructor, it calls the parent class's constructor, allowing you to initialize inherited properties.  
+You can also use `super.methodName()` to call a method from the parent class.
+
+**Example:**
+
+```typescript
+class Animal {
+  constructor(public name: string) {}
+  public iam(): string {
+    return `Hi, I am ${this.name}.`;
+  }
+}
+
+class Dog extends Animal {
+  constructor(name: string, public breed: string) {
+    super(name); // Calls Animal's constructor
+  }
+
+  public greet(): string {
+    return `${super.iam()}, and my breed is ${this.breed}.`; // Calls Animal's iam() method
+  }
+}
+```
