@@ -15,3 +15,24 @@ let aget: number = 30; // number type
 let resultt: string = namet + aget.toString(); // convert number to string for concatenation
 console.log(resultt); // Output: John30
 
+
+class Person {
+  name: string;
+  age: number;
+  isDeveloper: boolean;
+
+  constructor(name: string, age: number, isDeveloper: boolean) {
+    this.name = name;
+    this.age = age;
+    this.isDeveloper = isDeveloper;
+  }
+
+  saludar():string {
+    return `Hi, my name is ${this.name} and i'm ${this.age} años`;
+  }
+}
+
+const person1 = new Person("Ana", 30, true);
+console.log(person1.name); // "Ana"
+console.log(person1.age);  // 30
+console.log(person1.saludar())
