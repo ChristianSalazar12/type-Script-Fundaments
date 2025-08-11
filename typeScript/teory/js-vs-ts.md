@@ -40,6 +40,32 @@ TypeScript (TS) is a superset of JavaScript (JS) developed by Microsoft. It adds
 
 ---
 
+## 🔍 Example: Type Safety in JavaScript vs TypeScript
+
+### JavaScript (no types, no warning)
+
+```js
+let names = ["venta", "carro", "moto"];
+
+names.push(42); // ❌ This is a number, but JS doesn't complain
+
+console.log(names);
+// Output at runtime: ["venta", "carro", "moto", 42]
+```
+
+### TypeScript (with types, compile-time error)
+
+```ts
+let names: string[] = ["venta", "carro", "moto"];
+
+names.push(42); // ❌ Error: Argument of type 'number' is not assignable to parameter of type 'string'
+
+console.log(names);
+// Output at compile time: Error
+```
+
+---
+
 ## 📝 Summary
 
 TypeScript is a powerful tool for building robust and scalable applications, especially as projects grow in size and complexity. It builds on JavaScript, so you can gradually adopt it in existing JS projects.
@@ -85,6 +111,32 @@ TypeScript (TS) es un superconjunto de JavaScript (JS) desarrollado por Microsof
 - **🟪 TypeScript:**  
   - 🏢 Aplicaciones grandes, proyectos empresariales o cuando buscas mejor mantenibilidad y menos errores.
   - 👥 Cuando trabajas en equipo o en proyectos a largo plazo.
+
+---
+
+## 🔍 Ejemplo: Seguridad de Tipos en JavaScript vs TypeScript
+
+### JavaScript (sin tipos, sin advertencias)
+
+```js
+let nombres = ["venta", "carro", "moto"];
+
+nombres.push(42); // ❌ Este es un número, pero JS no se queja
+
+console.log(nombres);
+// Salida en tiempo de ejecución: ["venta", "carro", "moto", 42]
+```
+
+### TypeScript (con tipos, error en tiempo de compilación)
+
+```ts
+let nombres: string[] = ["venta", "carro", "moto"];
+
+nombres.push(42); // ❌ Error: El argumento del tipo 'number' no es asignable al parámetro del tipo 'string'
+
+console.log(nombres);
+// Salida en tiempo de compilación: Error
+```
 
 ---
 
