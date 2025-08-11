@@ -42,3 +42,50 @@ This project is organized into folders and files, each with a specific purpose t
     Provides tips and examples for refactoring and organizing your TypeScript code.
 
 Each file and folder is designed to help you focus on a specific TypeScript topic, making it easier to learn, practice, and reference as you progress through the material.
+
+---
+
+# Descripción de la Estructura del Proyecto
+
+Este proyecto está organizado en carpetas y archivos, cada uno con un propósito específico para ayudarte a aprender y practicar conceptos de TypeScript:
+
+- **fundamentsOfTS.ts**  
+  Contiene ejemplos básicos de TypeScript y conceptos fundamentales.
+
+- **system-Requirements.md**  
+  Enumera los requisitos e instrucciones de configuración necesarios para trabajar con TypeScript en este proyecto.
+
+- **assets/**  
+  Almacena imágenes y otros archivos multimedia utilizados para documentación o ejemplos (por ejemplo, `image-1.png`).
+
+- **teory/**  
+  Contiene explicaciones teóricas y carpetas por temas:
+  
+  - **fundaments.md**  
+    Explica la teoría fundamental de TypeScript.
+  
+  - **arrays/lists.md**  
+    Cubre arreglos y operaciones con listas en TypeScript.
+  
+  - **classes/classes.md**  
+    Explica clases, herencia y conceptos de programación orientada a objetos.
+  
+    - **classes/exercise/accessClass/**  
+      Contiene ejercicios prácticos para acceder y usar clases (`callClass.ts`, `class.ts`).
+  
+    - **classes/exercise/exportClass/**  
+      Contiene ejercicios sobre exportar e implementar clases (`exportClass.ts`, `implementation.ts`).
+  
+  - **fuctions/methods.md**  
+    Explica funciones y métodos en TypeScript.
+  
+  - **generic/generic.md**  
+    Cubre genéricos, mostrando cómo escribir código reutilizable y seguro en cuanto a tipos.
+  
+  - **interface/interface.md**  
+    Explica interfaces y cómo definir la estructura y contratos de los objetos.
+  
+  - **refactoring/refactoring.md**  
+    Proporciona consejos y ejemplos para refactorizar y organizar tu código TypeScript.
+
+Cada archivo y carpeta está diseñado para ayudarte a enfocarte en un tema específico de TypeScript, facilitando el aprendizaje, la práctica y la consulta a medida que avanzas
