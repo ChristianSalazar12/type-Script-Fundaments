@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "lib": ["es6", "dom","ES2015.Promise"],
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    // "description": {
+    //     "target": "The target option in your tsconfig.json specifies the version of JavaScript that TypeScript will compile your code to. For example, \"target\": \"es2015\" tells TypeScript to generate JavaScript code compatible with ES2015 (also known as ES6).",
+    //     "importance": "It determines which JavaScript features will be available in the output code. If you use newer TypeScript/JavaScript features, setting a higher target ensures they are supported in the generated code. For older browsers or environments, you may need to set a lower target (like \"es5\").",
+    //     "commonValues": [
+    //         "\"es5\" (compatible with most old browsers)",
+    //         "\"es6\" or \"es2015\" (modern syntax and features)",
+    //         "\"es2020\", \"esnext\" (latest features)"
+    //     ],
+    //     "example": "If you use arrow functions, classes, or let/const, you need at least \"es2015\" as your target."
+    // }
+}

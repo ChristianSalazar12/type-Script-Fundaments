@@ -87,7 +87,7 @@ type TypePerson = {
 type ReadOnlyPerson = ReadOnly<TypePerson>;
 // Equivalent to: { readonly name: string; readonly age: number; }
 
-const person: ReadOnlyPerson = { name: "Alice", age: 30 };
+let person: ReadOnlyPerson = { name: "Alice", age: 30 };
 // person.name = "Bob"; // ❌ Error: Cannot assign to 'name' because it is a read
 ```
 
@@ -106,4 +106,28 @@ const person: ReadOnlyPerson = { name: "Alice", age: 30 };
 - Can be instantiated with new.
 - Supports inheritance and encapsulation.
 - Used to create objects and manage their behavior.
+
+## Template Literal Types 
+```typescript
+type Variantes = "small" |  "medium" | "big";
+
+type ClassCSS = `boton-${Variantes}`;
+//complemeta una type con un type class.
+
+//let botonPequeño: ClassCSS = "boton-pequeño";
+```
+## Conditional Types
+```typescript
+type EsNumero<T> = T extends number ? true :false;
+
+// En este caso el ? esta haciendo como un if, donde evalua que si number cumple con la primera condition o sino la segunda.
+
+function esNumero<T>(valor:T): EsNumero<T>{
+return (typeof Valor ==='number') as EsNumero<T>;
+}
+
+const resultado1 = esNumero(42);
+console.log(resultado1);
+```
+
 
